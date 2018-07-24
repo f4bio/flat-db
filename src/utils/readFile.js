@@ -6,7 +6,7 @@
 const {
   existsSync,
   readFileSync,
-} = require('fs');
+} = require('../adapter');
 
 const {error} = require('./logger');
 

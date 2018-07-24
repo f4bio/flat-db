@@ -1,15 +1,10 @@
 // index
-
-const exec = require('child_process').execSync;
 const {
   existsSync,
   unlinkSync,
-} = require('fs');
-const mkdir = require('mkdirp').sync;
-
-const rmdir = (d) => {
-  return exec(`rm -rf ${d}`);
-};
+  mkdir,
+  rmdir,
+} = require('../adapter');
 
 const fixPath = require('./fixPath');
 const readFile = require('./readFile');

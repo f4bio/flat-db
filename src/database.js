@@ -3,8 +3,9 @@
  * @ndaidong
  **/
 
-const {readdirSync} = require('fs');
 const {basename} = require('path');
+
+const {readdirSync} = require('./adapter');
 
 const {info} = require('./utils/logger');
 

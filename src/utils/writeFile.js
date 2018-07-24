@@ -2,14 +2,13 @@
  * FlatDB - utils -> writeFile
  * @ndaidong
  **/
-
-const {
-  writeFileSync,
-} = require('fs');
-
 const {
   isString,
 } = require('bellajs');
+
+const {
+  writeFileSync,
+} = require('../adapter');
 
 const writeFile = (f, data = '') => {
   let content = isString(data) ? data : JSON.stringify(data);
